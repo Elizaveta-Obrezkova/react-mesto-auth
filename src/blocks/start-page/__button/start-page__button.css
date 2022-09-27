@@ -1,0 +1,37 @@
+.start-page__button {
+    max-width: 358px;
+    min-height: 50px;
+    background-color: #FFF;
+    color: #000;
+    font-family: 'Inter', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.222;
+    text-align: center;
+    margin: 186px 0 0;
+    border: none;
+    border-radius: 2px;
+    transition: opacity 1s ease;
+    padding: 0;
+    cursor: pointer;
+}
+
+.start-page__button:hover {
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 590px) {
+    .start-page__button {
+        max-width: 260px;
+        min-height: 46px;
+        margin: 45px 0 0 22px;
+        font-size: 14px;
+        line-height: 1.21423;
+    }
+}

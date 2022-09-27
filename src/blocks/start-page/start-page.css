@@ -1,0 +1,21 @@
+.start-page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 940px) {
+    .start-page {
+        max-width: 581px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .start-page {
+        max-width: 320px;
+    }
+}
