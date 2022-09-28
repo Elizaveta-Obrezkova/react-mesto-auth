@@ -19,15 +19,10 @@ function Login(props) {
     function handleSubmit (e) {
         e.preventDefault();
         props.onLogin(state.email, state.password)
-        .then(()=> {
-            setState({
-                email: '',
-                password: '',
-            });
-        })
-        .catch(err => {
-            console.log(err);
-        })
+        setState({
+            email: '',
+            password: '',
+        });
     }
 
     return (

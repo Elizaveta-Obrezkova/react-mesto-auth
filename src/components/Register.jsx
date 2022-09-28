@@ -22,21 +22,16 @@ function Register(props) {
         e.preventDefault();
 
         props.onRegister(state.email, state.password)
-        .then(()=> {
-            setState({
-                email: '',
-                password: '',
-            }); 
-        })
-        .catch(err => {
-            console.log(err);
-        })
+        setState({
+            email: '',
+            password: '',
+        }); 
     };
 
     return (
         <div className="start-page">
             <h2 className="start-page__title">Регистрация</h2>
-            <form name="login-form" className="start-page__form" onSubmit={handelSubmit}>
+            <form name="register-form" className="start-page__form" onSubmit={handelSubmit}>
                 <div className="input-container">
                     <input id="email" name="email" type="email" placeholder='Email' value={state.email} onChange={handleChange}
                         className="start-page__input" required minLength="5" maxLength="40" />

@@ -150,6 +150,9 @@ function App() {
             localStorage.setItem('jwt', res.token);
             setLoggedIn(true);
         })
+        .catch(err => {
+            console.log(err);
+        })
     };  
 
     useEffect(() =>{
@@ -167,6 +170,9 @@ function App() {
             else {setStatus(false)}
             history.push('/sign-in')
         })
+        .catch(err => {
+            console.log(err);
+        })
         .finally(() => {
             setStatusPopup(true)
         })
@@ -183,6 +189,9 @@ function App() {
             })
             .then(() => {
                 history.push('/')
+            })
+            .catch(err => {
+                console.log(err);
             })
         }
         tokenCheck()
